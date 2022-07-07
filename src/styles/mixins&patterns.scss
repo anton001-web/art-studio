@@ -1,0 +1,33 @@
+@mixin fontz($ff, $fw, $fs, $fst) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  font-style: $fst;
+}
+
+%gradient-filled-btn {
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  @include fontz('Montserrat', 600, 16px, normal)
+}
+
+%section-title {
+  color: $color-title;
+  @include fontz('Montserrat', 600, 36px, normal)
+}
+
+%btn-default {
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 2px solid $colorM-orange;
+  border-radius: 10px;
+  color: $colorM-orange;
+  @include fontz('Montserrat', 600, 16px, normal);
+  padding: 10px 25px;
+}
+

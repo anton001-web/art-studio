@@ -1,0 +1,72 @@
+.header-content {
+  padding: 10px $gutter;
+  display: grid;
+  grid-template-columns: 0fr 2fr .8fr .5fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  height: 30px;
+}
+
+.header-list {
+  margin: 0px 20px;
+  display: flex;
+  padding-inline-start: 0px;
+  align-items: center;
+}
+
+.header-list__block {
+  transition: all .4s;
+}
+
+.header-list__item {
+  list-style: none;
+  display: flex;
+
+  &[data-gap] {
+    margin-right: $gutter;
+  }
+}
+
+.header-anchor {
+  @include fontz('Montserrat', 500, 14px, normal);
+  text-decoration: none;
+  color: $colorB-main;
+}
+
+.header-callback-btn {
+  cursor: pointer;
+  @extend %btn-default;
+}
+
+.header-phone__btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: $colorB-main;
+  @include fontz('Montserrat', 600, 16px, normal);
+}
+
+.header-btns_hidden {
+  display: none;
+}
+
+.header-phone-ico {
+  cursor: pointer;
+}
+
+.burger-toggle {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  
+  span {
+    margin: 5px;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: $colorM-orange;
+  }
+}
