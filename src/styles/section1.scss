@@ -1,0 +1,41 @@
+.section-first {
+  margin-top: 0px;
+  background-color: #444444;
+}
+
+.section-first__content {
+  padding: $gutter;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-first__title {
+  max-width: 800px;
+  @include fontz('Montserrat', 600, 66px, normal);
+  color: $colorW-main;
+  margin-block-end: 0em;
+}
+
+.section-first__subTitle {
+  max-width: 600px;
+  @include fontz('Montserrat', 600, 30px, normal);
+  color: $colorW-main;
+}
+
+.section-first__text {
+  max-width: 800px;
+  @include fontz('Montserrat', 500, 14px, normal);
+  color: $colorW-main;
+
+  span {
+    display: block;
+  }
+}
+
+.section-first__button {
+  max-width: 370px;
+  padding: 20px 30px;
+  @extend %gradient-filled-btn;
+  font-size: 14px;
+  margin-block-end: 70px;
+}

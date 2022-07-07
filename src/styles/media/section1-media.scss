@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+  .section-first__button {
+    margin-top: 30px;
+  }
+
+  .section-first__title {
+    font-size: 38px;
+  }
+
+  .section-first__subTitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-first {
+    min-height: calc(100vh - 80px);
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+    }
+  }
+
+  .section-first__content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .section-first__title {
+    font-size: 26px;
+  }
+
+  .section-first__text, .section-first__subTitle {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@
 @import './mixins&patterns.scss';
 
 @import './header.scss';
-
+@import './section1.scss';
 
 .container {
   max-width: 1440px;
@@ -14,8 +14,13 @@ body {
   margin: 0;
 }
 
+section {
+  margin-top: $section-gap;
+}
+
 
 @import './media/header-media.scss';
+@import './media/section1-media.scss';
 
 
 
