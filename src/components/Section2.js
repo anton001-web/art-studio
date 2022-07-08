@@ -7,7 +7,7 @@ import 'swiper/scss'
 
 
 const Section2 = () => {
-    const [slidesView, setSlidesView] = useState(3 )
+    const [slidesView, setSlidesView] = useState(3)
     const [activeSlide, setActiveSlide] = useState(0);
     const galleryBg = React.createRef()
 
@@ -15,7 +15,6 @@ const Section2 = () => {
         if(e.target.dataset.openga) {
             if(!galleryBg.current.classList.contains('swiper-gallery')) {
                 setSlidesView(1)
-                console.log(setSlidesView)
                 galleryBg.current.classList.add('swiper-gallery')
             } else {
                 if(e.target.dataset.closega) {
@@ -25,6 +24,7 @@ const Section2 = () => {
             }
         }
     }
+
 
     const slidesPerView = () => {
         return slidesView
