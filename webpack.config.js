@@ -55,7 +55,7 @@ module.exports = {
                         loader: 'sass-loader'
                     }
                 ]
-            }
+            },
         ]
     },
     devServer: {

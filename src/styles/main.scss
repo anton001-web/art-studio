@@ -4,6 +4,7 @@
 
 @import './header.scss';
 @import './section1.scss';
+@import './section2.scss';
 
 .container {
   max-width: 1440px;
@@ -12,6 +13,11 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow: hidden;
 }
 
 section {
@@ -21,6 +27,7 @@ section {
 
 @import './media/header-media.scss';
 @import './media/section1-media.scss';
+@import './media/section2-media.scss';
 
 
 

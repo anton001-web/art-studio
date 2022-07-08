@@ -1,0 +1,60 @@
+.firstSwiper-section {
+  padding: $gutter;
+}
+
+.swiper {
+  max-width: 1000px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+  transition: all .4s;
+}
+
+.swiper-button-next {
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/images/arrowNext.png");
+  background-repeat: no-repeat;
+  bottom: 230px;
+  z-index: 10;
+  right: 0;
+  background-position: 15px;
+}
+
+.swiper-button-prev {
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 230px;
+  z-index: 10;
+  background-image: url("../assets/images/arrowPrev.png");
+  background-repeat: no-repeat;
+  background-position: 10px;
+
+}
+
+.swiper-slide {
+  opacity: 0;
+}
+
+.swiper-slide-active, .swiper-slide-next, .swiper-slide-prev{
+  opacity: 1;
+}
+
+
+.swiper-slide img{
+  transform: scale(.7);
+}
+
+.swiper-slide-active img{
+  transform: scale(1);
+}
+
+.swiper-slide-active {
+  z-index: 100;
+}
