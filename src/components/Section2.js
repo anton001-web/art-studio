@@ -2,13 +2,18 @@ import React, {useState} from 'react'
 import {section1SliderData} from "../utils/section1-sliderData";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Navigation} from "swiper";
+import useMatchMedia from 'use-match-media-hook'
 
 import 'swiper/scss'
 
+const queries = [
+    '(max-width: 767px)'
+]
 
 const Section2 = () => {
-    const [slidesView, setSlidesView] = useState(3)
+    const [slidesView, setSlidesView] = useState(1)
     const [activeSlide, setActiveSlide] = useState(0);
+    const [tablet] = useMatchMedia(queries)
     const galleryBg = React.createRef()
 
     const handleGallery = (e) => {
@@ -19,23 +24,19 @@ const Section2 = () => {
             } else {
                 if(e.target.dataset.closega) {
                     galleryBg.current.classList.remove('swiper-gallery')
-                    setSlidesView(3)
+                    setSlidesView(tablet ? 1 : 3)
                 }
             }
         }
     }
 
 
-    const slidesPerView = () => {
-        return slidesView
-    }
-
     return (
         <section className='firstSwiper-section'>
             <div className='gallery-wrap' ref={galleryBg} data-openga data-closega onClick={handleGallery}>
                 <Swiper
                     modules={[Navigation]}
-                    slidesPerView={slidesPerView()}
+                    slidesPerView={slidesView}
                     centeredSlides={true}
                     centeredSlidesBounds={true}
                     navigation
@@ -43,7 +44,7 @@ const Section2 = () => {
                     spaceBetween={-65}
                     breakpoints={{
                         767: {
-                            slidesPerView: slidesPerView()
+                            slidesPerView: slidesView === 1 ? 3 : 1
                         }
                     }}
                 >
