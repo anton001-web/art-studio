@@ -33,6 +33,7 @@ const Section2 = () => {
 
     return (
         <section className='firstSwiper-section'>
+            <h1 className='firstSwiper-section__title'>Наши роботы</h1>
             <div className='gallery-wrap' ref={galleryBg} data-openga data-closega onClick={handleGallery}>
                 <Swiper
                     modules={[Navigation]}
@@ -41,7 +42,7 @@ const Section2 = () => {
                     centeredSlidesBounds={true}
                     navigation
                     loop={true}
-                    spaceBetween={-65}
+                    spaceBetween={-83}
                     breakpoints={{
                         767: {
                             slidesPerView: slidesView === 1 ? 3 : 1

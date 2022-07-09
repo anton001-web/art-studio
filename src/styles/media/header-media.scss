@@ -52,7 +52,7 @@
 
   .header-list__block {
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     height: calc(100% - 80px);
