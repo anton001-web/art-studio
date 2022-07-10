@@ -1,0 +1,44 @@
+.studio-info__section-content {
+  position: relative;
+  padding: $gutter;
+}
+
+.studio-info__section-title {
+  @extend %section-title;
+}
+
+.studio-info__block {
+  transition: all .4s;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.studio-info__block.info-active {
+  max-height: max-content;
+}
+
+.studio-info__text {
+  @include fontz('Montserrat', 500, 16px, normal);
+  color: $colorB-main;
+}
+
+.studio-info__abz {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.toggle-info {
+  cursor: pointer;
+  position: absolute;
+  color: $colorM-orange;
+  @include fontz('Montserrat', 600, 16px, normal);
+  right: 40px;
+  z-index: 200;
+  border: none;
+  background-color: #fff;
+}
+
+.studio-info__arrow {
+  margin-left: 10px;
+  transform: rotate(180deg);
+}

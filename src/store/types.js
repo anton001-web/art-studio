@@ -1,1 +1,2 @@
 export const TOGGLE_BURGER = 'TOGGLE_BURGER'
+export const TOGGLE_INFO = 'TOGGLE_INFO'
