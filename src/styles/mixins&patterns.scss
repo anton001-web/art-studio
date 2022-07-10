@@ -5,6 +5,22 @@
   font-style: $fst;
 }
 
+%stage-title {
+  @include fontz('Montserrat', 600, 18px, normal);
+  color: $color-title;
+}
+
+%stage-subTitle {
+  @include fontz('Montserrat', 500, 16px, normal);
+  color: $colorB-main;
+}
+
+%stg-border {
+  border: 2px solid #E97522;
+  box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
+  border-radius: 12px;
+}
+
 %gradient-filled-btn {
   border: none;
   color: #fff;

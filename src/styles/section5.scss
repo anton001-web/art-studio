@@ -1,0 +1,72 @@
+.section-stages__title {
+  @extend %section-title;
+}
+
+.stages-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+}
+
+.section-stages__content {
+  padding: $gutter;
+}
+
+.stage {
+  position: relative;
+  background-color: #fff;
+  padding: 10px $gutter;
+  max-width: 300px;
+  @extend %stg-border;
+
+}
+
+.stage[data-st='four'] {
+  top: 150px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  left: 100px;
+}
+
+.stage[data-st='three'] {
+  top: 150px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+}
+
+.stage[data-st='five'] {
+  grid-column: 3/4;
+  grid-row: 5/6;
+  right: 400px;
+  bottom: -10px;
+}
+
+.stage[data-st='two'] {
+  top: 50px;
+  left: 200px;
+}
+
+.stage_title {
+  @extend %stage-title;
+}
+
+.stage-subTitle {
+  @extend %stage-subTitle;
+
+}
+
+.stage-number {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  left: -25px;
+  background-color: #fff;
+  @include fontz('Montserrat', 600, 30px, normal);
+  color: $colorM-orange;
+}

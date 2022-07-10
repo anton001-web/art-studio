@@ -14,16 +14,17 @@ const Header = () => {
     useEffect(() => {
         if(visible) {
             document.body.style.overflow = 'hidden'
-            burgerRef.current.style.left = '0%'
+            burgerRef.current.classList.add('burger-active')
         } else {
             document.body.style.overflow = 'visible'
-            burgerRef.current.style.left = '-120%'
+            burgerRef.current.classList.remove('burger-active')
         }
     }, [visible])
 
     const burgerHandle = () => {
         dispatch(toggleBurger())
     }
+
 
     return (
         <header className='header'>

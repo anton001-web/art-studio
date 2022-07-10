@@ -1,0 +1,41 @@
+@media screen and (max-width: 1240px) {
+  .stage {
+    &[data-st='five'] {
+      grid-column: 3/4;
+      grid-row: 5/6;
+      right: 250px;
+      bottom: -10px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .stage-subTitle {
+    margin-bottom: 40px;
+  }
+
+  .stages-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stage[data-st] {
+    grid-column: 0;
+    grid-row: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .stage {
+    margin-bottom: $gutter;
+  }
+
+  .stage-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

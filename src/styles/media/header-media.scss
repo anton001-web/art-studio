@@ -57,6 +57,7 @@
   }
 
   .header-list__block {
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
@@ -94,3 +95,6 @@
   }
 }
 
+.header-list__block.burger-active {
+  left: 0;
+}
