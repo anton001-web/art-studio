@@ -18,7 +18,9 @@
 
 %section-title {
   color: $color-title;
-  @include fontz('Montserrat', 600, 36px, normal)
+  @include fontz('Montserrat', 600, 36px, normal);
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 %btn-default {

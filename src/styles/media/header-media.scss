@@ -25,6 +25,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .burger-header__hidden {
+    display: flex;
+  }
+
   .header-logo {
     justify-self: start;
   }
@@ -34,6 +38,8 @@
   }
 
   .header-content {
+    //z-index: ;
+    grid-template-rows: 0fr 0fr;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -54,8 +60,8 @@
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
-    bottom: 0;
-    height: calc(100% - 80px);
+    bottom: 0px;
+    height: 100%;
     left: -120%;
 
     .header-list__item {

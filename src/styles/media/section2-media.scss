@@ -1,68 +1,72 @@
 @media screen and (max-width: 1240px) {
-  .swiper-slide img {
+  .section2-swiper__slide .section2-swiper__slide-img {
     height: 700px;
   }
 
-  .swiper-button-prev {
-    bottom: 320px
+  .section2-swiper .swiper-button-prev {
+    bottom: 370px
   }
 
-  .swiper-button-next {
-    bottom: 320px
+  .section2-swiper .swiper-button-next {
+    bottom: 370px
   }
 }
 
 @media screen and (max-width: 998px) {
-  .swiper-slide img {
+  .section2-swiper__slide .section2-swiper__slide-img {
     height: 650px;
   }
-  .swiper-button-prev {
-    bottom: 290px
+  .section2-swiper .swiper-button-prev {
+    bottom: 360px
   }
 
-  .swiper-button-next {
-    bottom: 290px
+  .section2-swiper .swiper-button-next {
+    bottom: 360px
   }
 }
 
 @media screen and (max-width: 767px) {
-  .gallery-wrap.swiper-gallery .swiper {
-    margin: 44px;
+  .gallery-wrap.swiper-gallery .section2-swiper {
+    margin: 150px 44px;
   }
 
   .firstSwiper-section {
     padding: 44px;
   }
 
-  .swiper-slide img {
-    height: 550px;
+  .section2-swiper__slide .section2-swiper__slide-img {
+    height: 400px;
   }
 
-  .swiper-button-prev {
+  .section2-swiper .swiper-button-prev {
     left: 20px;
-    bottom: 250px
+    bottom: 240px
   }
 
-  .swiper-button-next {
-    bottom: 250px;
+  .section2-swiper .swiper-button-next {
+    bottom: 240px;
     right: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .gallery-wrap.swiper-gallery .section2-swiper {
+    margin: 95px 44px;
+  }
+
   .firstSwiper-section__title {
     font-size: 28px;
   }
 
-  .swiper-slide img {
-    height: 480px;
+  .section2-swiper__slide .section2-swiper__slide-img {
+    height: 300px;
   }
 
-  .swiper-button-prev {
-    bottom: 220px
+  .section2-swiper .swiper-button-prev {
+    bottom: 190px
   }
 
-  .swiper-button-next {
-    bottom: 220px;
+  .section2-swiper .swiper-button-next {
+    bottom: 190px;
   }
 }

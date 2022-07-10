@@ -70,3 +70,15 @@
     background-color: $colorM-orange;
   }
 }
+
+.burger-header__hidden {
+  padding: 10px 30px;
+  background-color: #fff;
+  display: none;
+  justify-content: space-between;
+}
+
+.burger-btns_hidden {
+  display: flex;
+  align-items: center;
+}

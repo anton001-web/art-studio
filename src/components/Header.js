@@ -31,6 +31,18 @@ const Header = () => {
                 <div className='header-content'>
                     <img src="./assets/images/logo.png" className='header-logo'/>
                     <div className='header-list__block' ref={burgerRef}>
+                        <div className='burger-header__hidden'>
+                            <img src="./assets/images/logo.png" className='header-logo'/>
+
+                            <div className='burger-btns_hidden'>
+                                <a href="#"><img src="./assets/images/header-phone-ico.png" className='header-phone-ico'/></a>
+                                <button className='burger-toggle' onClick={burgerHandle}>
+                                    <span className='bar'></span>
+                                    <span className='bar'></span>
+                                    <span className='bar'></span>
+                                </button>
+                            </div>
+                        </div>
                         <ul className='header-list'>
                             <li className='header-list__item' data-gap><a href="#"
                                                                           className='header-anchor'>Портфолио</a></li>
