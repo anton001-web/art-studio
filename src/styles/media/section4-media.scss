@@ -1,0 +1,28 @@
+@media screen and (max-width: 767px) {
+  .section4-grid__block {
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "love podro"
+    "parni podro"
+    "group lbook"
+    "group pets"
+    "parnaya  semya"
+    "ber  semya"
+    "delstyle  devu"
+  ;
+  }
+
+  .grid_item {
+    &[data-grid='six'] {
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .grid_item--title {
+    font-size: 12px;
+    bottom: 10px;
+  }
+}

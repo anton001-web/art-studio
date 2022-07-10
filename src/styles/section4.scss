@@ -1,0 +1,84 @@
+.section4-gallery {
+  margin-top: $section-gap;
+}
+
+.section4-gallery__title {
+  @extend %section-title;
+}
+
+.section4-grid__block {
+  padding: $gutter;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "love podro parnaya"
+    "parni podro semya"
+    "group lbook semya"
+    "group devu devu"
+    "ber pets delstyle"
+;
+}
+
+.grid_item {
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &[data-grid='one'] {
+    grid-area: semya;
+  }
+
+  &[data-grid='two'] {
+    grid-area: parni;
+  }
+
+  &[data-grid='three'] {
+    grid-area: lbook;
+  }
+
+  &[data-grid='four'] {
+    grid-area: group;
+  }
+
+  &[data-grid='five'] {
+    grid-area: ber;
+  }
+
+  &[data-grid='six'] {
+    grid-area: devu;
+  }
+
+  &[data-grid='seven'] {
+    grid-area: pets;
+  }
+
+  &[data-grid='eight'] {
+    grid-area: parnaya;
+  }
+
+  &[data-grid='nine'] {
+    grid-area: podro;
+  }
+
+  &[data-grid='ten'] {
+    grid-area: love;
+  }
+
+  &[data-grid='eleven'] {
+    grid-area: delstyle;
+  }
+}
+
+.grid_item--title {
+  position: absolute;
+  bottom: 30px;
+  @include fontz('Montserrat', 600, 16px, normal);
+  color: #fff;
+  left: 10px;
+}
