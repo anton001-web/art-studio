@@ -1,0 +1,39 @@
+@media screen and (max-width: 1300px) {
+  .services-btns__block {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .photoshoot-packet {
+    justify-content: space-between;
+  }
+
+  .photoshoot-cards__block {
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photoshoot-packet[data-packet='maxi'] {
+    position: relative;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photoshoot-packet {
+    max-width: 300px;
+  }
+
+  .photoshoot-cards__block {
+    justify-items: center;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .photoshoot-packet[data-packet='maxi'] {
+    position: relative;
+    left: 0;
+  }
+}
