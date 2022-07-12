@@ -7,7 +7,7 @@ const Section4 = () => {
         <section className='section4-gallery'>
             <div className='container'>
                 <div className='section4-gallery__content'>
-                    <h1 className='section4-gallery__title'>Виды услуг</h1>
+                    <h1 className='section4-gallery__title title'>Виды услуг</h1>
                     <div className='section4-grid__block'>
                         {
                             section4GalleryImages.map((item, index) => (

@@ -14,7 +14,7 @@
 }
 
 .studio-info__block.info-active {
-  max-height: max-content;
+
 }
 
 .studio-info__text {
@@ -36,9 +36,18 @@
   z-index: 200;
   border: none;
   background-color: #fff;
+  margin-top: 10px;
 }
 
 .studio-info__arrow {
   margin-left: 10px;
   transform: rotate(180deg);
+}
+
+.studio-info__content.active .studio-info__block{
+  max-height: max-content;
+}
+
+.studio-info__content.active .studio-info__block{
+  max-height: max-content;
 }

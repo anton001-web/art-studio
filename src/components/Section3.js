@@ -30,7 +30,7 @@ const Section3 = () => {
     return (
         <section className='secondSwiper-section'>
             <div className='container'>
-                <h1 className='secondSwiper-section__title'>Наши локации</h1>
+                <h1 className='secondSwiper-section__title title'>Наши локации</h1>
                 <div className='secondSwiper-gallery_block' ref={block} data-closegal data-opengal onClick={handleGallery}>
                     <Swiper
                         effect={'coverflow'}

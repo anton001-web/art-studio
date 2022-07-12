@@ -36,9 +36,11 @@ section {
 @import './media/section3-media.scss';
 @import './media/section4-media.scss';
 @import './media/section5-media.scss';
-@import './media/section6-media.scss';
 @import './media/section7-media.scss';
 
 
-
-
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 28px;
+  }
+}

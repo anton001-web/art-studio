@@ -13,7 +13,7 @@ const Section5 = () => {
         <section className='section-stages'>
             <div className='container'>
                 <div className='section-stages__content'>
-                    <h1 className='section-stages__title'>Этапы работ</h1>
+                    <h1 className='section-stages__title title'>Этапы работ</h1>
                     <div className='stages-block'>
                         {
                             stages && stages.map((item, index) => (

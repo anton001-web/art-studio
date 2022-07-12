@@ -1,3 +1,4 @@
 export const TOGGLE_BURGER = 'TOGGLE_BURGER'
-export const TOGGLE_INFO = 'TOGGLE_INFO'
+export const TOGGLE_INFO_TWO = 'TOGGLE_INFO_TWO'
+export const TOGGLE_INFO_ONE = 'TOGGLE_INFO_ONE'
 export const TOGGLE_SERVICE = 'TOGGLE_SERVICE'

@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
-import {toggleInfoOne} from "../store/actions";
+import {toggleInfoTwo} from "../store/actions";
 import {HiddenInfo} from "./HiddenInfo";
 
-const sec6infoContent =
+const sec8infoContent =
     <>
         <span className='studio-info__abz'>
             Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов. А их, -на секундочку, -аж семь штук.
@@ -61,39 +61,39 @@ const sec6infoContent =
 
 
 
-const Section6 = () => {
+const Section8 = () => {
     const dispatch = useDispatch()
-    const sec6Href = React.createRef()
-    const sec6Arrow = React.createRef()
+    const sec8Href = React.createRef()
+    const sec8Arrow = React.createRef()
 
-    const {visibleOne} = useSelector(store => {
+    const {visibleTwo} = useSelector(store => {
         const {info} = store
         return info
     })
 
     useEffect(() => {
-        if(visibleOne) {
-            sec6Arrow.current.style.transform = 'rotate(0deg)'
-            sec6Href.current.classList.add('active')
+        if(visibleTwo) {
+            sec8Arrow.current.style.transform = 'rotate(0deg)'
+            sec8Href.current.classList.add('active')
         } else {
-            sec6Arrow.current.style.transform = 'rotate(180deg)'
-            sec6Href.current.classList.remove('active')
+            sec8Arrow.current.style.transform = 'rotate(180deg)'
+            sec8Href.current.classList.remove('active')
         }
-    }, [visibleOne])
+    }, [visibleTwo])
 
 
     const handleInfo = () => {
-        dispatch(toggleInfoOne())
+        dispatch(toggleInfoTwo())
     }
 
     return (
         <section className='studio-info__section'>
             <div className='container'>
                 <div className='studio-info__section-content'>
-                    <h1 className='studio-info__section-title title'>Фотостудия для любых идейных фотоссесий</h1>
-                    <HiddenInfo ref={sec6Href} content={sec6infoContent}/>
-                    <button className='toggle-info' onClick={() => handleInfo()}>
-                        {visibleOne === 'sec6' ? 'Скрыть' : 'Показать'} <img src="./assets/images/Rectangle521.png" className='studio-info__arrow' ref={sec6Arrow}/>
+                    <h1 className='studio-info__section-title title'>Фотоисскуство в тренде. Любая фотосессия ваша история</h1>
+                    <HiddenInfo ref={sec8Href} content={sec8infoContent}/>
+                    <button className='toggle-info' onClick={handleInfo}>
+                        {visibleTwo === 'sec8' ? 'Скрыть' : 'Показать'} <img src="./assets/images/Rectangle521.png" className='studio-info__arrow' ref={sec8Arrow}/>
                     </button>
                 </div>
             </div>
@@ -101,4 +101,4 @@ const Section6 = () => {
     )
 }
 
-export default Section6;
+export default Section8;

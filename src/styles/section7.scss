@@ -34,6 +34,7 @@
 }
 
 .photoshoot-packet {
+  justify-content: space-between;
   &::before {
     content: '';
     background: rgba(0, 0, 0, 0.03);

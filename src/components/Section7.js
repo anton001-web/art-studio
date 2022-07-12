@@ -23,7 +23,7 @@ const Section7 = () => {
         <section className='photoshoot-price__section'>
             <div className='container'>
                 <div className='photoshoot-price__content'>
-                    <h1 className='photoshoot-price__title'>Стоимость фотосессии</h1>
+                    <h1 className='photoshoot-price__title title'>Стоимость фотосессии</h1>
                     <div className='photoshoot-cards__block'>
                         {
                             section7CardsData.map((item, index) => (

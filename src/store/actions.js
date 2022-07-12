@@ -1,4 +1,4 @@
-import {TOGGLE_BURGER, TOGGLE_INFO, TOGGLE_SERVICE} from "./types";
+import {TOGGLE_BURGER, TOGGLE_INFO_ONE, TOGGLE_INFO_TWO, TOGGLE_SERVICE} from "./types";
 
 export const toggleBurger = () => {
     return {
@@ -6,9 +6,15 @@ export const toggleBurger = () => {
     }
 }
 
-export const toggleInfo = () => {
+export const toggleInfoOne = () => {
     return {
-        type: TOGGLE_INFO
+        type: TOGGLE_INFO_ONE,
+    }
+}
+
+export const toggleInfoTwo = () => {
+    return {
+        type: TOGGLE_INFO_TWO,
     }
 }
 
