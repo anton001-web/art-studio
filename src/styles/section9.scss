@@ -1,0 +1,173 @@
+.letter-section__title {
+  @extend %section-title;
+}
+
+.letter-section__content {
+  background: #F9F4EE;
+  padding: $gutter;
+  margin: 10px;
+}
+
+.letter-section__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.letter-body__info {
+  padding-top: $gutter;
+  display: flex;
+  flex-direction: column;
+}
+
+.letter-body__info-title {
+  text-transform: uppercase;
+  @include fontz('Montserrat', 500, 14px, normal);
+  letter-spacing: 1px;
+  color: #C1C1C1;
+}
+
+.letter-body__info-subTitle {
+  @include fontz('Montserrat', 600, 48px, normal);
+  color: $colorB-main;
+  max-width: 470px;
+  margin-block-start: 10px;
+}
+
+.letter-body__info-list {
+  display: flex;
+  padding-inline-start: 0px;
+  flex-direction: column;
+}
+
+.letter-body__list-item {
+  @include fontz('Montserrat', 600, 16px, normal);
+  color: $colorB-main;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.letter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+  img {
+    width: 60%;
+    object-fit: cover;
+  }
+}
+
+.letter-title {
+  @include fontz('Montserrat', 500, 16px, normal);
+  margin-top: $gutter;
+  max-width: 330px;
+  color: $color-title;
+  text-align: center;
+}
+
+.letter-button {
+  cursor: pointer;
+  margin-top: $gutter;
+  width: 340px;
+  @extend %gradient-filled-btn;
+}
+
+.letter-modal {
+  transition: all .3s;
+  @extend %modal;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.letter-modal__content {
+  position: relative;
+  border-radius: 15px;
+  margin: 20px;
+  padding: $gutter;
+}
+
+.letter-modal-imgBlock {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  img {
+    width: 90%;
+    object-fit: cover;
+  }
+}
+
+.letter-modal__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.letter-modal__title {
+  @include fontz('Montserrat', 600, 36px, normal);
+  color: $colorB-main;
+}
+
+.letter-modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-block {
+  margin-bottom: $gutter;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-title {
+  @include fontz('Montserrat', 500, 16px, normal);
+  color: #121621;
+  opacity: 0.4;
+}
+
+.field-input {
+  border: 1px solid #DDDEE4;
+  border-radius: 5px;
+  padding: 7px 10px;
+  @include fontz('Montserrat', 500, 12px, normal);
+  color: #B1B1B1;
+}
+
+.letter-modal__btn {
+  cursor: pointer;
+  @extend %gradient-filled-btn;
+  padding: 15px 0px;
+}
+
+.letter-modal__subInfo {
+  text-align: center;
+  max-width: 400px;
+  @include fontz('Montserrat', 400, 11px, normal);
+
+  a {
+    color: $colorB-main;
+  }
+}
+
+.letter-modal__close {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.letter-modal.letter-active {
+  opacity: 1;
+  visibility: visible;
+}

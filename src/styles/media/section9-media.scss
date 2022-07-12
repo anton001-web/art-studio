@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+  .letter-section__body {
+    grid-template-columns: 1fr;
+  }
+
+  .letter-body__info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .letter-body__info-subTitle {
+    font-size: 34px;
+  }
+
+  .letter-modal__content {
+    grid-template-columns: 1fr;
+  }
+
+  .letter-modal-imgBlock {
+    justify-content: center;
+    img {
+      width: 50%;
+    }
+  }
+
+  .letter-modal__title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .letter-button {
+    width: 100%;
+  }
+}
