@@ -1,4 +1,12 @@
-import {ADD_SLIDE, TOGGLE_BURGER, TOGGLE_INFO_ONE, TOGGLE_INFO_TWO, TOGGLE_LETTER, TOGGLE_SERVICE} from "./types";
+import {
+    ADD_SLIDE,
+    TOGGLE_BURGER,
+    TOGGLE_INFO_ONE,
+    TOGGLE_INFO_TWO,
+    TOGGLE_LETTER,
+    TOGGLE_REVIEW,
+    TOGGLE_SERVICE
+} from "./types";
 
 export const toggleBurger = () => {
     return {
@@ -15,6 +23,12 @@ export const toggleInfoOne = () => {
 export const toggleInfoTwo = () => {
     return {
         type: TOGGLE_INFO_TWO,
+    }
+}
+
+export const toggleReview = () => {
+    return {
+        type: TOGGLE_REVIEW,
     }
 }
 

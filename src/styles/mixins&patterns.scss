@@ -69,3 +69,75 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+%modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+%modal-title {
+  margin-bottom: 20px;
+  max-width: 500px;
+  text-align: center;
+  @include fontz('Montserrat', 600, 36px, normal);
+  color: $color-title;
+}
+
+%modal-btn {
+  cursor: pointer;
+  @extend %gradient-filled-btn;
+}
+
+%modal-agreeText {
+  margin-top: 10px;
+  text-align: center;
+  max-width: 400px;
+  @include fontz('Montserrat', 400, 11px, normal);
+
+  a {
+    color: $colorB-main;
+  }
+}
+
+%modal-imgBlock {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  img {
+    width: 80%;
+    object-fit: cover;
+  }
+}
+
+%modal-close {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+%modal-field__block {
+  margin-bottom: $gutter;
+  display: flex;
+  flex-direction: column;
+}
+
+%modal-field__title {
+  @include fontz('Montserrat', 500, 16px, normal);
+  color: #121621;
+  opacity: 0.4;
+}
+
+%modal-field__input {
+  border: 1px solid #DDDEE4;
+  border-radius: 5px;
+  padding: 10px 5px;
+  @include fontz('Montserrat', 500, 12px, normal);
+  color: #B1B1B1;
+}

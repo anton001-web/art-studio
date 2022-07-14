@@ -13,8 +13,10 @@ const Section9 = () => {
 
     useEffect(() => {
         if(visible) {
+            document.body.style.overflow = 'hidden'
             letterModal.current.classList.add('letter-active')
         } else {
+            document.body.style.overflow = 'visible'
             letterModal.current.classList.remove('letter-active')
         }
     }, [visible])

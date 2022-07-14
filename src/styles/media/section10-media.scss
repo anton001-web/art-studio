@@ -11,4 +11,17 @@
   .sec10__add-review {
     bottom: 0;
   }
+
+  .review-modal__content {
+    grid-template-columns: 1fr;
+  }
+
+  .review-modal__imgBlock {
+    grid-row: 1;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+  }
 }

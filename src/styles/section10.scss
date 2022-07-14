@@ -116,3 +116,70 @@
   bottom: 40px;
   z-index: 400;
 }
+
+.review-modal {
+  transition: all .3s;
+  @extend %modal;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.review-modal__content {
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 20px;
+  padding: $gutter;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.review-modal__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form {
+  @extend %modal-form;
+}
+
+.review-modal__title {
+  @extend %modal-title;
+}
+
+.review-modal__btn {
+  @extend %modal-btn;
+}
+
+.review-modal__subInfo {
+  @extend %modal-agreeText;
+}
+
+.review-modal__imgBlock {
+  @extend %modal-imgBlock;
+}
+
+.review-modal__close {
+  @extend %modal-close;
+}
+
+.review-modal.review-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.review-input-block {
+  position: relative;
+}
+
+.review-field__input {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.review-add__img {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
