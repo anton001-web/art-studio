@@ -20,6 +20,7 @@
 }
 
 .letter-body__info-title {
+  margin-bottom: 20px;
   text-transform: uppercase;
   @include fontz('Montserrat', 500, 14px, normal);
   letter-spacing: 1px;
@@ -27,6 +28,7 @@
 }
 
 .letter-body__info-subTitle {
+  margin-bottom: 60px;
   @include fontz('Montserrat', 600, 48px, normal);
   color: $colorB-main;
   max-width: 470px;

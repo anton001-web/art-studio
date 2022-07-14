@@ -95,12 +95,14 @@
 }
 
 .photoshoot-packet__location {
-  margin-block-start: 0em;
+  margin-block-end: 15px;
+  margin-block-start: 10px;
   @include fontz('Montserrat', 600, 14px, normal);
   color: $colorB-light;
 }
 
 .services__title {
+  margin-bottom: 15px;
   text-align: center;
   @include fontz('Montserrat', 600, 16px, normal);
   color: $color-title;
@@ -153,12 +155,12 @@
 }
 
 .service-modal__content {
+  margin: 20px;
   padding: $gutter;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
   width: 600px;
   background-color: #fff;
   border-radius: 10px;
@@ -166,20 +168,22 @@
 
 .input-service-block {
   width: 70%;
-  margin: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 
   input {
-    width: 100%;
     padding: 10px 12px;
     border: 1px solid #DDDEE4;
     border-radius: 5px;
     color: #121621;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 0px;
   }
 }
 
 .service-modal__title {
   margin-block-end: 0;
+  margin-block-start: 10px;
   text-align: center;
   @include fontz('Montserrat', 600, 36px, normal);
   color: $color-title;
@@ -193,7 +197,6 @@
 
 .service-modal__submit {
   cursor: pointer;
-  width: 100%;
   @extend %gradient-filled-btn;
 }
 

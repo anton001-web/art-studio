@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination, EffectCoverflow} from "swiper";
 import {section3SliderData} from "../utils/section3-sliderData";
@@ -12,7 +12,6 @@ const Section3 = () => {
     const [tablet] = useMatchMedia(queries)
     const [slidesView, setSlidesView] = useState(1)
     const block = React.createRef()
-
     const handleGallery = (e) => {
         if(e.target.dataset.opengal) {
             if(!block.current.classList.contains('secondSwiper-gallery_block--active')) {

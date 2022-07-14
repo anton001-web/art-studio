@@ -1,6 +1,7 @@
 @import './fonts.scss';
 @import './vars.scss';
 @import './mixins&patterns.scss';
+@import '~reset-css/reset.css';
 
 @import './header.scss';
 @import './section1.scss';
@@ -11,6 +12,7 @@
 @import './section6.scss';
 @import './section7.scss';
 @import './section9.scss';
+@import './section10.scss';
 
 .container {
   max-width: 1440px;
@@ -39,6 +41,7 @@ section {
 @import './media/section5-media.scss';
 @import './media/section7-media.scss';
 @import './media/section9-media.scss';
+@import './media/section10-media.scss';
 
 
 @media screen and (max-width: 767px) {

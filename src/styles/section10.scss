@@ -1,0 +1,118 @@
+.review-section__title {
+  @extend %section-title;
+}
+
+.review-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec10-slider {
+  position: relative;
+}
+
+
+.sec10-swiper__slide {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  transition: all .4s;
+}
+
+.sec10-swiper__slide-imgBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec10-swiper__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.sec10-swiper__slide-title {
+  margin-bottom: $gutter;
+  @include fontz('Montserrat', 600, 24px, normal);
+  color: $colorB-main;
+}
+
+.sec10-slide__review {
+  line-height: 25px;
+  text-align: center;
+  @include fontz('Montserrat', 500, 16px, normal);
+  color: $color-title;
+}
+
+.sec10-swiper__slide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec10-slide__button {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #fff;
+  border: none;
+  color: $colorM-orange;
+  @include fontz('Montserrat', 600, 16px, normal);
+}
+
+.sec10-slider .swiper-button-next {
+  background-image: url("../assets/images/arrowNext.png");
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 180px;
+  z-index: 200;
+  background-repeat: no-repeat;
+  background-position: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  right: 20px;
+}
+
+.sec10-slider .swiper-button-prev {
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 180px;
+  z-index: 200;
+  background-image: url('../assets/images/arrowPrev.png');
+  background-repeat: no-repeat;
+  background-position: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  left: 20px;
+}
+
+.sec10-slider .swiper-wrapper .swiper-slide {
+  transition: all .5s;
+}
+
+.sec10-slider .swiper-wrapper .swiper-slide {
+  transform: scale(.8);
+  position: relative;
+  bottom: -30px;
+}
+
+.sec10-slider .swiper-wrapper .swiper-slide-active {
+  bottom: 35px;
+}
+
+.sec10__add-review {
+  cursor: pointer;
+  @extend %gradient-filled-btn;
+  max-width: 400px;
+  position: relative;
+  bottom: 40px;
+  z-index: 400;
+}

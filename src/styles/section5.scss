@@ -16,7 +16,7 @@
 .stage {
   position: relative;
   background-color: #fff;
-  padding: 10px $gutter;
+  padding: 20px $gutter;
   max-width: 300px;
   @extend %stg-border;
 
@@ -49,6 +49,7 @@
 }
 
 .stage_title {
+  margin-bottom: 20px;
   @extend %stage-title;
 }
 

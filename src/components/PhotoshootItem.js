@@ -31,6 +31,7 @@ export const PhotoshootItem = ({item, updatePrice, index, price, cardType, onePr
     const modalInputHandle = (count, prType) => {
         const cardPrice = count * prType
         updatePrice(cardPrice, modalType)
+        dispatch(toggleService({}))
     }
 
 

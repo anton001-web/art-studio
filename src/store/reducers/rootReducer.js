@@ -9,5 +9,5 @@ export const rootReducer = combineReducers({
     burger: burgerReducer,
     info: infoReducer,
     service: serviceReducer,
-    letter: letterReducer
+    letter: letterReducer,
 })

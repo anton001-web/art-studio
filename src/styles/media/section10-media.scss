@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+  .sec10-slider .swiper-wrapper .swiper-slide {
+    transform: scale(.9);
+    bottom: 00px;
+  }
+
+  .sec10-slider .swiper-wrapper .swiper-slide-active {
+    bottom: 0px;
+  }
+
+  .sec10__add-review {
+    bottom: 0;
+  }
+}

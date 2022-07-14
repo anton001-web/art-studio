@@ -37,3 +37,14 @@
     left: 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .service-modal__title {
+    font-size: 20px;
+  }
+
+  .service-modal__submit {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
