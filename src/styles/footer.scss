@@ -1,0 +1,44 @@
+.footer {
+  margin-top: 200px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: $gutter;
+}
+
+.footer-top {
+  padding-bottom: 25px;
+  display: flex;
+  border-bottom: 1px solid #B1B1B1;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+
+  margin-top: $gutter;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.footer-social__title {
+  @include fontz('Montserrat', 500, 16px, normal);
+  color: $color-title;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.social-list {
+  margin-left: 20px;
+  display: flex;
+}
+
+.social-ico {
+  cursor: pointer;
+  margin-right: 15px;
+}

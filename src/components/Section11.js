@@ -3,7 +3,7 @@ import {FeedbackForm} from "./FeedbackForm";
 
 const Section11 = () => {
     return (
-        <section className='map-section'>
+        <section className='map-section' id='contacts'>
             <div className='container'>
                 <div className='map-section__content'>
                     <div className='map-section__imgBlock'>

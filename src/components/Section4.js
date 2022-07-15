@@ -4,7 +4,7 @@ import {section4GalleryImages} from "../utils/section4-galleryImages";
 
 const Section4 = () => {
     return (
-        <section className='section4-gallery'>
+        <section className='section4-gallery' id='workKinds'>
             <div className='container'>
                 <div className='section4-gallery__content'>
                     <h1 className='section4-gallery__title title'>Виды услуг</h1>

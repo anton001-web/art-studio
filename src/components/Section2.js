@@ -36,7 +36,7 @@ const Section2 = () => {
 
 
     return (
-        <section className='firstSwiper-section'>
+        <section className='firstSwiper-section' id='portf'>
             <h1 className='firstSwiper-section__title title'>Наши роботы</h1>
             <div className='gallery-wrap' ref={galleryBg} data-openga data-closega onClick={handleGallery}>
                 <Swiper

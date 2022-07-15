@@ -20,7 +20,7 @@ const Section7 = () => {
     }
 
     return (
-        <section className='photoshoot-price__section'>
+        <section className='photoshoot-price__section' id='services'>
             <div className='container'>
                 <div className='photoshoot-price__content'>
                     <h1 className='photoshoot-price__title title'>Стоимость фотосессии</h1>

@@ -6,12 +6,12 @@
   align-items: center;
 }
 
-.header-logo {
+.logo {
   width: 100px;
   height: 30px;
 }
 
-.header-list {
+.list-FH {
   margin: 0px 20px;
   display: flex;
   padding-inline-start: 0px;
@@ -23,7 +23,7 @@
   transition: all .4s;
 }
 
-.header-list__item {
+.list-item__FH {
   list-style: none;
   display: flex;
 
@@ -32,7 +32,7 @@
   }
 }
 
-.header-anchor {
+.anchor-FH {
   @include fontz('Montserrat', 500, 14px, normal);
   text-decoration: none;
   color: $colorB-main;
