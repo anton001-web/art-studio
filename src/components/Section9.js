@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
 import {toggleLetter} from "../store/actions";
+import {FeedbackForm} from "./FeedbackForm";
 
 const Section9 = () => {
     const dispatch = useDispatch()
@@ -36,26 +37,8 @@ const Section9 = () => {
                         </div>
                         <div className='letter-modal__info'>
                             <h1 className='letter-modal__title'>Форма обратной связи</h1>
-                            <div className='letter-modal__form'>
-                                <div className='name-field__block field-block'>
-                                    <span className='name-field__title field-title'>Имя</span>
-                                    <input type="text" className='name-field__input field-input' placeholder='Введите ваше имя'/>
-                                </div>
-                                <div className='mail-field__block field-block'>
-                                    <span className='mail-field__title field-title'>E-mail</span>
-                                    <input type="text" className='mail-field__input field-input' placeholder='Введите вашу почту'/>
-                                </div>
-                                <div className='phone-field__block field-block'>
-                                    <span className='phone-field__title field-title'>Телефон</span>
-                                    <input type="text" className='phone-field__input field-input' placeholder='Введите ваш телефон'/>
-                                </div>
-                            </div>
-                            <button className='letter-modal__btn'>
-                                отправить
-                            </button>
-                            <p className='letter-modal__subInfo'>
-                                Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
-                            </p>
+                            <FeedbackForm />
+
                         </div>
                     </div>
                 </div>

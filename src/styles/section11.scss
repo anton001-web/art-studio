@@ -1,0 +1,42 @@
+.map-section__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $gutter;
+  padding: $gutter;
+}
+
+.map-section__imgBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 80%;
+    object-fit: cover;
+  }
+}
+
+.map-section__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .field-block {
+    width: 400px;
+  }
+
+  .modal__subInfo {
+    max-width: 430px;
+  }
+
+  .modal__btn {
+    width: 400px;
+  }
+}
+
+.map-section__info-title {
+  margin-bottom: 20px;
+  @include fontz('Montserrat', 600, 30px, normal);
+  color: $colorB-main;
+}

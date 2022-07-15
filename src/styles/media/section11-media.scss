@@ -1,0 +1,59 @@
+@media screen and (max-width: 1240px) {
+  .map-section__imgBlock {
+    img {
+      width: 100%;
+    }
+  }
+  .map-section__info {
+    .field-block {
+      width: 320px;
+    }
+    .modal__btn {
+      width: 320px;
+    }
+  }
+
+  .map-section__info-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-section__content {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    row-gap: $gutter;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .map-section__info {
+    .field-block {
+      input {
+        width: 100%;
+      }
+    }
+
+    .field-block {
+      width: 250px;
+
+      .field-title {
+        align-self: start;
+      }
+    }
+
+    .modal__btn {
+      width: 255px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .map-section__info-title {
+    text-align: center;
+  }
+}

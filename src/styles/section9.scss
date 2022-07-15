@@ -125,11 +125,11 @@
   @extend %modal-field__input
 }
 
-.letter-modal__btn {
+.modal__btn {
   @extend %modal-btn;
 }
 
-.letter-modal__subInfo {
+.modal__subInfo {
   @extend %modal-agreeText;
 }
 
