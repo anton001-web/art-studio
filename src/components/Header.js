@@ -32,18 +32,6 @@ const Header = () => {
                 <div className='header-content'>
                     <img src="./assets/images/logo.png" className='logo'/>
                     <div className='header-list__block' ref={burgerRef}>
-                        <div className='burger-header__hidden'>
-                            <img src="./assets/images/logo.png" className='logo'/>
-
-                            <div className='burger-btns_hidden'>
-                                <a href="#"><img src="./assets/images/header-phone-ico.png" className='header-phone-ico'/></a>
-                                <button className='burger-toggle' onClick={burgerHandle}>
-                                    <span className='bar'></span>
-                                    <span className='bar'></span>
-                                    <span className='bar'></span>
-                                </button>
-                            </div>
-                        </div>
                         <ul className='header-list list-FH'>
                             <li className='header-list__item list-item__FH' data-gap><a href="#portf" className='header-anchor anchor-FH'>Портфолио</a></li>
                             <li className='header-list__item list-item__FH' data-gap><a href="#workKinds" className='header-anchor anchor-FH'>Виды работ</a></li>

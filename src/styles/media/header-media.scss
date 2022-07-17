@@ -59,9 +59,10 @@
   .header-list__block {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0px;
+    top: 50px;
     height: 100%;
     left: -120%;
 

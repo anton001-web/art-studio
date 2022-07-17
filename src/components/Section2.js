@@ -13,16 +13,15 @@ const queries = [
 const Section2 = () => {
     const [slidesView, setSlidesView] = useState(3)
     const [activeSlide, setActiveSlide] = useState(0);
-    const [initialSlide, setInitialSlide] = useState(0)
+    const [swiperRef, setSwiperRef] = useState(null);
     const [tablet] = useMatchMedia(queries)
     const galleryBg = React.createRef()
     const slider = React.createRef()
 
-
     const handleGallery = (e) => {
         if(e.target.dataset.openga) {
             if(!galleryBg.current.classList.contains('swiper-gallery')) {
-                setInitialSlide(e.target.dataset.ind)
+                swiperRef.slideToLoop(e.target.dataset.ind - 2, 100)
                 setSlidesView(1)
                 galleryBg.current.classList.add('swiper-gallery')
             } else {
@@ -34,14 +33,12 @@ const Section2 = () => {
         }
     }
 
-
     return (
         <section className='firstSwiper-section' id='portf'>
             <h1 className='firstSwiper-section__title title'>Наши роботы</h1>
             <div className='gallery-wrap' ref={galleryBg} data-openga data-closega onClick={handleGallery}>
                 <Swiper
                     modules={[Navigation, Pagination]}
-                    initialSlide={initialSlide}
                     slidesPerView={slidesView}
                     dots={true}
                     centeredSlides={true}
@@ -54,6 +51,7 @@ const Section2 = () => {
                     className='section2-swiper'
                     spaceBetween={-160}
                     ref={slider}
+                    onSwiper={setSwiperRef}
                 >
                     {
                         section1SliderData.map((item, index) => (
