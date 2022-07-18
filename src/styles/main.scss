@@ -21,10 +21,45 @@
   margin: 0 auto;
 }
 
+
 body {
   margin: 0;
   overflow-x: hidden;
 }
+
+html.active{
+  position: fixed;
+  body {
+    position: fixed;
+  }
+}
+
+html.active{
+  position: relative;
+  overflow: hidden;
+
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+html.active {
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+html.active {
+  body {
+      position: fixed;
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+  }
+}
+
 
 #root {
   overflow: hidden;

@@ -13,10 +13,10 @@ const Header = () => {
 
     useEffect(() => {
         if(visible) {
-            document.body.style.overflow = 'hidden'
+            document.querySelector('html').classList.add('active')
             burgerRef.current.classList.add('burger-active')
         } else {
-            document.body.style.overflow = 'visible'
+            document.querySelector('html').classList.remove('active')
             burgerRef.current.classList.remove('burger-active')
         }
     }, [visible])

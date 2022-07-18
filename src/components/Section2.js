@@ -27,7 +27,7 @@ const Section2 = () => {
             } else {
                 if(e.target.dataset.closega) {
                     galleryBg.current.classList.remove('swiper-gallery')
-                    setSlidesView(tablet ? 1 : 3)
+                    setSlidesView(3)
                 }
             }
         }
