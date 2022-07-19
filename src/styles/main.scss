@@ -34,6 +34,14 @@ html.active{
   }
 }
 
+.pswp__button--zoom .pswp__icn {
+  display: none;
+}
+
+.pswp__counter {
+  display: none;
+}
+
 html.active{
   position: relative;
   overflow: hidden;

@@ -56,6 +56,13 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.css$/,
+                use : [
+                    MiniCssExtract.loader,
+                    { loader: "css-loader" }
+                ]
+            },
         ]
     },
     devServer: {
