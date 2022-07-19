@@ -13,10 +13,10 @@ const Header = () => {
 
     useEffect(() => {
         if(visible) {
-            document.querySelector('html').classList.add('active')
+            document.documentElement.classList.add('active')
             burgerRef.current.classList.add('burger-active')
         } else {
-            document.querySelector('html').classList.remove('active')
+            document.documentElement.classList.remove('active')
             burgerRef.current.classList.remove('burger-active')
         }
     }, [visible])
