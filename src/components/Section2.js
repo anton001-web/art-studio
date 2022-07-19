@@ -16,7 +16,6 @@ const Section2 = () => {
     const [swiperRef, setSwiperRef] = useState(null);
     const [tablet] = useMatchMedia(queries)
     const galleryBg = React.createRef()
-    const slider = React.createRef()
 
     const handleGallery = (e) => {
         if(e.target.dataset.openga) {
@@ -50,7 +49,6 @@ const Section2 = () => {
                     loop={true}
                     className='section2-swiper'
                     spaceBetween={-160}
-                    ref={slider}
                     onSwiper={setSwiperRef}
                 >
                     {

@@ -17,7 +17,7 @@ const Section5 = () => {
                     <div className='stages-block'>
                         {
                             stages && stages.map((item, index) => (
-                                <div className='stage' data-st={item.st}>
+                                <div className='stage' data-st={item.st} key={index}>
                                     <h2 className='stage_title' >{item.title}</h2>
                                     <p className='stage-subTitle'>
                                         {item.subTitle}

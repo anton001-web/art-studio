@@ -11,19 +11,29 @@ const queries = [
 const Section3 = () => {
     const [tablet] = useMatchMedia(queries)
     const [slidesView, setSlidesView] = useState(1)
+    const [swiperRef, setSwiperRef] = useState(null);
     const block = React.createRef()
+
+    let currentSlide;
+
     const handleGallery = (e) => {
         if(e.target.dataset.opengal) {
             if(!block.current.classList.contains('secondSwiper-gallery_block--active')) {
+                swiperRef.slideToLoop(e.target.dataset.ind - 2, 100)
                 block.current.classList.add('secondSwiper-gallery_block--active')
                 setSlidesView(-1)
             } else {
                 if(e.target.dataset.closegal) {
+                    swiperRef.slideToLoop(0, 100)
                     setSlidesView(tablet ? -1 : 1)
                     block.current.classList.remove('secondSwiper-gallery_block--active')
                 }
             }
         }
+    }
+
+    const slideChange = (sw) => {
+        currentSlide = sw.realIndex
     }
 
     return (
@@ -45,11 +55,13 @@ const Section3 = () => {
                         navigation
                         spaceBetween={40}
                         className='section3-swiper'
+                        onSwiper={setSwiperRef}
+                        onSlideChange={slideChange}
                     >
                         {
                             section3SliderData.map((item, index) => (
                                 <SwiperSlide key={index} className='section3-swiper__slide'>
-                                    <img src={item.img} className='section2-swiper_img' onClick={() => handleGallery} data-opengal/>
+                                    <img src={item.img} className='section2-swiper_img' onClick={() => handleGallery} data-opengal data-ind={index}/>
                                 </SwiperSlide>
                             ))
                         }

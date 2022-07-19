@@ -11,7 +11,7 @@ const Section4 = () => {
                     <div className='section4-grid__block'>
                         {
                             section4GalleryImages.map((item, index) => (
-                                <div className='grid_item' data-grid={item.item}>
+                                <div key={index} className='grid_item' data-grid={item.item}>
                                     <img src={item.img} alt="" />
                                     <p className='grid_item--title'>{item.title}</p>
                                 </div>
